@@ -2,7 +2,8 @@
 
 ### Stack
 * [webpack] 
-* [sass-loader](https://github.com/jtangelder/sass-loader)
+* [sass-loader] webpack module for compiling scss
+* [Normalize css] makes browsers render all elements more consistently and in line with modern standards. 
 
 ### Dev Run
 - `npm install`
@@ -12,4 +13,5 @@
 
 [webpack]: <https://webpack.github.io/>
 [sass-loader]: <https://github.com/jtangelder/sass-loader>
+[Normalize css]: <https://necolas.github.io/normalize.css>
    
