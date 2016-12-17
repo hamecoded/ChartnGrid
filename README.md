@@ -11,7 +11,7 @@
 - `npm install`
 - `npm install webpack-dev-server -g`
 - `npm start` which will now listen on localhost:8080. 
-*in the background it is set to execute `webpack-dev-server --progress --colors --inline`*
+*(in the background it is set to execute `webpack-dev-server --progress --colors --inline`)*
 
 ### Dev Workflows
 Mark each milestone in development in a tagged version
