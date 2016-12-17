@@ -22,6 +22,9 @@
     "path": "^0.12.7",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "normalize.css": "^5.0.0"
+  },
+  "dependencies": {
   }
 }
