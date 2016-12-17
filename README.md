@@ -12,6 +12,13 @@
 - `npm install webpack-dev-server -g`
 - `npm start` will do `webpack-dev-server --progress --colors --inline`, which will will now listen on localhost:8080
 
+### Dev Workflows
+Mark each milestone in development in a tagged version
+```bash
+git tag 1.1 -m "- state and tabset"
+git push origin --tags
+```
+
 ### Build
 - `webpack` will generate `bundle.js`
 
