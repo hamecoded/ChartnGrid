@@ -20,6 +20,12 @@ git tag 1.1 -m "- state and tabset"
 git push origin --tags
 ```
 
+Delete tag
+```bash
+git tag -d 1.1
+git push origin :refs/tags/1.1
+```
+
 ### Build
 - `webpack` will generate `bundle.js`
 
