@@ -1,3 +1,16 @@
+.show-filter {
+	cursor: pointer;
+	&:before{
+		display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+		content: "\f0b0";
+	}
+}
+
 .grid{
 	width: 100%;
 	overflow: auto;
@@ -8,8 +21,12 @@
 			text-align: left;
 			white-space: nowrap; 
 			border-bottom: 1px solid #ccc;
-			&:hover{
-				
+			
+			&:nth-child(n+2):hover, &.selected{
+				@extend .show-filter;
+			}
+			&:not(.selected):nth-child(n+2):hover{
+				color: red;
 			}
 		}
 		tr{
@@ -17,5 +34,20 @@
 			&:first-child{
 			}
 		}
+		tbody tr{
+			&.selected td:first-child {
+				@extend .show-filter;
+			}
+			&:not(.selected):hover {
+				background-color: #ccc;
+				td:first-child {
+					@extend .show-filter;
+				}
+			}
+			&:not(.selected):hover td:first-child {
+				color: red;
+			}
+			
+		} 
 	}
 }

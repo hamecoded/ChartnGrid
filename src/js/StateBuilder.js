@@ -28,7 +28,7 @@ class State {
 	// will be used by the cachier as the primary identifier
 	toString() {
 		if(this.service){
-        	return `${this.service}_${this.traffic}_${this.interval}`;
+        	return `${this.service}_${this.traffic.value}_${this.interval.value}::${this.aspect.value}`;
 		}else {
 			return 'State\'s manadatory property, service, is yet to be initialized.';
 		}
@@ -36,7 +36,15 @@ class State {
 
 	// fetch the data from a cachier which if needed makes the network call
 	fetch () {
+		console.log(`state changed fetching data from cachier according to state ${this}`);
+	}
 
+	static getEnum ( type, value ){
+		for( let item in type ){
+			if ( type[item].value.toLowerCase() === value.toLowerCase() ) {
+				return type[item];
+			}
+		}
 	}
 
 	//Getters

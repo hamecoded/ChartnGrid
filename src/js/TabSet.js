@@ -1,4 +1,5 @@
 let Component = require('./Component');
+let StateBuilder = require('./StateBuilder');
 
 class TabSet extends Component{
 	/**
@@ -8,22 +9,17 @@ class TabSet extends Component{
 	 *                        later on can be expanded to 2 way binding
 	 * @return {[type]}       [description]
 	 */
-	constructor(elId, state){
-		super(elId);
-		this._init(state);
-		this._bind();
+	constructor(elId, state, stateType){
+		super(elId, state, stateType);
 	}
 
-	_init(state) {
+	render() {
 		// set the tab selection state
 		let tabs = this.el.getElementsByTagName('div');
 		for(let tab of tabs){
 			let tabValue = tab.innerText.toLowerCase();
-			if( tabValue === state.value) {
-				this.state = state;
-				if(this.state){
-					tab.classList.add('selected');
-				}
+			if( tabValue === this.state[this.stateType].value) {
+				tab.classList.add('selected');
 				return;
 			}
 		}
@@ -37,35 +33,11 @@ class TabSet extends Component{
 			}
 			let tab = event.srcElement;
 			let tabValue = tab.innerText.toLowerCase();
-			this.state = tabValue;
-			if(this.state){
-				tab.classList.add('selected');
-			}
+			let item = StateBuilder.State.getEnum(StateBuilder[this.stateType.toUpperCase()], tabValue);
+			this.state[this.stateType] = item;
+			tab.classList.add('selected');
 		});
 	}
 
-	get state () {
-		return this._state;
-	}
-
-	set state (state) {
-		if( typeof(state) === 'string' && typeof(this._state) === 'object' ) {
-			// we'll get here when component updates model
-			this._state.value = state;
-
-		}else if( typeof(state) === 'object' && Reflect.has(state, 'value') ){
-			// we'll get here when model updates component
-			this._state = state;
-		}else{
-			console.error(`Tabset ${this.elId} state changed FAILED for input:`, state);
-			return;
-		}
-		console.log(`Tabset ${this.elId} state changed to ${this._state && this._state.value}`);
-	}
-
-	//TODO: expand to have a render function
-	render () {
-
-	}
 }
 module.exports = TabSet;
