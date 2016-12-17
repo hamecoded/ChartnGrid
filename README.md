@@ -1,5 +1,12 @@
 # Chart n Grid
 
+### Functionality
+Browse to [site](https://hamecoded.github.io/ChartnGrid/) you can:
+- change the interval from hour to day to week to month.
+- change whether you'd like to see inbound or outbound traffic.
+- click on the columns header to filter the chart's data against the shown attribute.
+- click on any row to show the sgiven service over time.
+
 ### Stack
 * [webpack] 
 * [sass-loader] webpack module for compiling scss
