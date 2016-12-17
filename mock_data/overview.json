@@ -16,7 +16,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Nginx",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -24,7 +24,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Apache",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -32,7 +32,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Weblogic",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -40,7 +40,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Kafka",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -48,7 +48,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Spark",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -56,7 +56,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Couchbase",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -64,7 +64,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Httpd",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -72,7 +72,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Jetty",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -80,7 +80,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Storm",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -88,7 +88,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Ruby",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -96,7 +96,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Rails",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -104,7 +104,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "MySql",
+    "service": "Postgress",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,
@@ -112,7 +112,7 @@
     "timestamp": 1481993406783
   },
   {
-    "service": "last",
+    "service": "Python",
     "failed_flows": 56,
     "flows": 556,
     "packets": 36564,

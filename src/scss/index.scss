@@ -3,10 +3,12 @@
 
 @import "table";
 @import "tabs";
+@import "chart";
 
 
 body{
 	font-family: 'Roboto Condensed', sans-serif;
+	min-width: 600px;
 
 	.bar{
 		height: 45px;
@@ -17,6 +19,7 @@ body{
 	}
 	.chart{
 		height: 200px;
+		text-align: center;
 	}
 	.grid{
 		height: calc(100% - 335px - 5px);

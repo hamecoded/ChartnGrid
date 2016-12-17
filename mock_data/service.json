@@ -3,14 +3,49 @@
     "failed_flows": 84375,
     "flows": 4131,
     "packets": 94167,
-    "bytes": 37,
-    "timestamp": 1481993406783
+    "bytes": 57,
+    "timestamp": 1362145698957
   },
   {
     "failed_flows": 56,
     "flows": 556,
-    "packets": 36564,
+    "packets": 36064,
     "bytes": 1,
-    "timestamp": 1481993406783
+    "timestamp": 1362145696050
+  },
+  {
+    "failed_flows": 56,
+    "flows": 552,
+    "packets": 36664,
+    "bytes": 10,
+    "timestamp": 1362145553187
+  },
+  {
+    "failed_flows": 56,
+    "flows": 551,
+    "packets": 36864,
+    "bytes": 13,
+    "timestamp": 1362145523957
+  },
+  {
+    "failed_flows": 56,
+    "flows": 526,
+    "packets": 36564,
+    "bytes": 17,
+    "timestamp": 1362068521903
+  },
+  {
+    "failed_flows": 56,
+    "flows": 356,
+    "packets": 36364,
+    "bytes": 21,
+    "timestamp": 1362067554943
+  },
+  {
+    "failed_flows": 56,
+    "flows": 576,
+    "packets": 36964,
+    "bytes": 31,
+    "timestamp": 1362066127737
   }
 ]

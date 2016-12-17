@@ -10,11 +10,11 @@ const TRAFFIC = {
 	OUTBOUND: { value: 'outbound' }
 };
 const ASPECT = {
-	SERVICE: { value: 'From' },
-	BYTES: { value: 'Bytes' },
-	PACKETS: { value: 'Packets' },
-	FLOWS: { value: 'Flows' },
-	FAILED_FLOWS: { value: 'Failed Flows' }
+	SERVICE: { value: 'From', key: 'service' },
+	BYTES: { value: 'Bytes', key: 'bytes' },
+	PACKETS: { value: 'Packets', key: 'packets' },
+	FLOWS: { value: 'Flows', key: 'flows' },
+	FAILED_FLOWS: { value: 'Failed Flows', key: 'failed_flows' }
 };
 
 class State {
@@ -36,7 +36,12 @@ class State {
 
 	// fetch the data from a cachier which if needed makes the network call
 	fetch () {
-		console.log(`state changed fetching data from cachier according to state ${this}`);
+		if(this.service){
+			console.log(`state has changed: fetching data from cachier: ${this}`);
+			let data = require('json-loader!../../mock_data/service.json');
+			var event = new CustomEvent('state-change', { detail: data });
+			document.dispatchEvent(event, data);
+		}
 	}
 
 	static getEnum ( type, value ){
