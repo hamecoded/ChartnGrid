@@ -1,7 +1,7 @@
 # Chart n Grid
 
 ### Functionality
-Browse to [site](https://hamecoded.github.io/ChartnGrid/) you can:
+Browse to [site](https://hamecoded.github.io/ChartnGrid/), and start playing with:
 - change the interval from hour to day to week to month.
 - change whether you'd like to see inbound or outbound traffic.
 - click on the columns header to filter the chart's data against the shown attribute.
