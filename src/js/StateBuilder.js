@@ -1,9 +1,9 @@
 //TODO: ENUM the right way: http://www.2ality.com/2016/01/enumify.html
 const INTERVAL = {
-	HOUR: 'hour', 
-	DAY: 'day',
-	WEEK: 'week',
-	MONTH: 'month' 
+	HOUR: { value: 'hour' }, 
+	DAY: { value: 'day' }, 
+	WEEK: { value: 'week' }, 
+	MONTH: { value: 'month' } 
 };
 const TRAFFIC = {
 	INBOUND: 'inbound',
@@ -73,4 +73,7 @@ class State {
 		this.fetch();
 	}
 }
-module.exports = State;
+module.exports.State = State;
+module.exports.TRAFFIC = TRAFFIC;
+module.exports.INTERVAL = INTERVAL;
+module.exports.ASPECT = ASPECT;

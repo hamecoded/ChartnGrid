@@ -10,7 +10,10 @@
 ### Dev Run
 - `npm install`
 - `npm install webpack-dev-server -g`
-- `webpack-dev-server --progress --colors --inline` will now listen on localhost:8080
+- `npm start` will do `webpack-dev-server --progress --colors --inline`, which will will now listen on localhost:8080
+
+### Build
+- `webpack` will generate `bundle.js`
 
 
 [webpack]: <https://webpack.github.io/>
