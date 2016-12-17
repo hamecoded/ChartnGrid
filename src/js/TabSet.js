@@ -1,4 +1,6 @@
-class TabSet {
+let Component = require('./Component');
+
+class TabSet extends Component{
 	/**
 	 * make the neccessary interaction bindings and apply the initial state
 	 * @param  {[type]} elId  the tabset parent element id attribute
@@ -7,8 +9,7 @@ class TabSet {
 	 * @return {[type]}       [description]
 	 */
 	constructor(elId, state){
-		this.elId = elId;
-		this.el = document.getElementById(elId);
+		super(elId);
 		this._init(state);
 		this._bind();
 	}

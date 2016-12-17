@@ -1,4 +1,21 @@
 .grid{
 	width: 100%;
-	
+	overflow: auto;
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		th{
+			text-align: left;
+			white-space: nowrap; 
+			border-bottom: 1px solid #ccc;
+			&:hover{
+				
+			}
+		}
+		tr{
+			line-height: 30px;
+			&:first-child{
+			}
+		}
+	}
 }

@@ -10,10 +10,11 @@ const TRAFFIC = {
 	OUTBOUND: { value: 'outbound' }
 };
 const ASPECT = {
-	BYTES: { value: 'bytes' },
-	PACKETS: { value: 'packets' },
-	FLOWS: { value: 'flows' },
-	FAILED_FLOWS: { value: 'failed flows' }
+	SERVICE: { value: 'From' },
+	BYTES: { value: 'Bytes' },
+	PACKETS: { value: 'Packets' },
+	FLOWS: { value: 'Flows' },
+	FAILED_FLOWS: { value: 'Failed Flows' }
 };
 
 class State {
