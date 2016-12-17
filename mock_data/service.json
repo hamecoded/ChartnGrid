@@ -1,0 +1,16 @@
+[
+  {
+    "failed_flows": 84375,
+    "flows": 4131,
+    "packets": 94167,
+    "bytes": 37,
+    "timestamp": 1481993406783
+  },
+  {
+    "failed_flows": 56,
+    "flows": 556,
+    "packets": 36564,
+    "bytes": 1,
+    "timestamp": 1481993406783
+  }
+]

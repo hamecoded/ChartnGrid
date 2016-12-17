@@ -4,5 +4,16 @@
 body{
 	width: 100%;
 	height: 100%;
-	background-color: green;
+
+	.bar{
+		height: 45px;
+		border-bottom: 1px solid #ccc;
+	}
+	.chart{
+		height: 200px;
+	}
+	.grid{
+		height: calc(100% - 335px - 5px);
+		background-color: green;
+	}
 }
