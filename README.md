@@ -3,7 +3,7 @@
 ### Stack
 * [webpack] 
 * [sass-loader] webpack module for compiling scss
-* json/file/url/less-loaders for webpack
+* `json/file/url/less-loader`s for webpack
 * [d3.js] for the line chart
 * [Normalize css] makes browsers render all elements more consistently and in line with modern standards. 
 * [Google Fonts] WebFonts Roboto Condensed
