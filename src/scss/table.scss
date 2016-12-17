@@ -21,6 +21,7 @@
 			text-align: left;
 			white-space: nowrap; 
 			border-bottom: 1px solid #ccc;
+			min-width: 100px;
 			
 			&:nth-child(n+2):hover, &.selected{
 				@extend .show-filter;
