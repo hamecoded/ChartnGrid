@@ -1,13 +1,18 @@
 @import "./node_modules/normalize.css/normalize";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
 @import "table";
+@import "tabs";
 
 body{
-	width: 100%;
-	height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
 
 	.bar{
 		height: 45px;
 		border-bottom: 1px solid #ccc;
+	}
+	.cycleBar .tabs{
+		float: right;
 	}
 	.chart{
 		height: 200px;

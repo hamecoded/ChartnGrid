@@ -1,0 +1,21 @@
+.tabs{
+	font-size: 14px;
+	display: table;
+	height: 100%;
+	&.large{
+		font-size: 16px;
+
+	}
+	> *{
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 4px;
+		&:not(.selected){
+			cursor: pointer;
+		}
+		&.selected{
+			font-weight: bold;
+		}
+	}
+
+}
