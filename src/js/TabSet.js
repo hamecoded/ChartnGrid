@@ -1,4 +1,11 @@
 class TabSet {
+	/**
+	 * make the neccessary interaction bindings and apply the initial state
+	 * @param  {[type]} elId  the tabset parent element id attribute
+	 * @param  {[type]} state an object reference passed to update the state through the component
+	 *                        later on can be expanded to 2 way binding
+	 * @return {[type]}       [description]
+	 */
 	constructor(elId, state){
 		this.elId = elId;
 		this.el = document.getElementById(elId);

@@ -6,14 +6,14 @@ const INTERVAL = {
 	MONTH: { value: 'month' } 
 };
 const TRAFFIC = {
-	INBOUND: 'inbound',
-	OUTBOUND: 'outbound'
+	INBOUND: { value: 'inbound' },
+	OUTBOUND: { value: 'outbound' }
 };
 const ASPECT = {
-	BYTES: 'bytes',
-	PACKETS: 'packets',
-	FLOWS: 'flows',
-	FAILED_FLOWS: 'failed flows'
+	BYTES: { value: 'bytes' },
+	PACKETS: { value: 'packets' },
+	FLOWS: { value: 'flows' },
+	FAILED_FLOWS: { value: 'failed flows' }
 };
 
 class State {
@@ -74,6 +74,8 @@ class State {
 	}
 }
 module.exports.State = State;
-module.exports.TRAFFIC = TRAFFIC;
-module.exports.INTERVAL = INTERVAL;
-module.exports.ASPECT = ASPECT;
+// Though const ensure the variable holds the same obj ref, 
+// Object.freeze will prevent changing that Object
+module.exports.TRAFFIC = Object.freeze(TRAFFIC);
+module.exports.INTERVAL = Object.freeze(INTERVAL);
+module.exports.ASPECT = Object.freeze(ASPECT);

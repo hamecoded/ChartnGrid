@@ -1,5 +1,5 @@
 require("!style-loader!css-loader!sass-loader!../scss/index.scss");
-var StateBuilder = require('./StateBuilder.js'); 
+ StateBuilder = require('./StateBuilder.js'); 
 var TabSet = require('./TabSet.js'); 
 
 state = new StateBuilder.State ();
