@@ -10,7 +10,7 @@
 * [fontawesome] for rendering the filter icon
 
 ### Approach
-- A vanilla approach for demonstrating a state management and custom componantization through using ES6 class inheritance.
+- A vanilla approach for demonstrating a state management and custom componentization through using ES6 class inheritance.
 - Not using any helper libraries, no jQuery;loDash;Underscore or the such.
 - Utilizing webpack for both dev and prod environments.
 - Writing css using sass transpiler.
