@@ -30,6 +30,10 @@ git push origin :refs/tags/1.1
 - `webpack` will generate `bundle.js`
 
 
+### Reactifying
+- [Survive.js](http://survivejs.com/webpack/advanced-techniques/configuring-react/) to configure react
+- [Babel preset](https://babeljs.io/docs/plugins/preset-react/)
+
 [webpack]: <https://webpack.github.io/>
 [sass-loader]: <https://github.com/jtangelder/sass-loader>
 [Normalize css]: <https://necolas.github.io/normalize.css>

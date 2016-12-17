@@ -1,4 +1,5 @@
 let Component = require('./Component');
+let React = require('React');
 
 class Table extends Component{
 
@@ -8,9 +9,14 @@ class Table extends Component{
 	}
 
 	render (cols) {
+		let reactTable = <div class="grid" />
 		for(let col in cols){
-
+			let reactEl = 	<div className="col">
+							 ${col}
+							</div>;
+			reactTable.appendChild(reactEl);
 		}
+		return reactTable;
 	}
 }
 module.exports = Table;
