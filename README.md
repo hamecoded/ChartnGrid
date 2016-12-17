@@ -5,7 +5,7 @@ Browse to [site](https://hamecoded.github.io/ChartnGrid/), and start playing wit
 - change the interval from hour to day to week to month.
 - change whether you'd like to see inbound or outbound traffic.
 - click on the columns header to filter the chart's data against the shown attribute.
-- click on any row to show the sgiven service over time.
+- click on any row to switch service and see how it performed over time.
 
 ### Stack
 * [webpack] 
