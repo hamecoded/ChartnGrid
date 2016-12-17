@@ -1,9 +1,12 @@
 require("!style-loader!css-loader!sass-loader!../scss/index.scss");
- StateBuilder = require('./StateBuilder.js'); 
-var TabSet = require('./TabSet.js'); 
 
+let StateBuilder = require('./StateBuilder'); 
 state = new StateBuilder.State ();
 console.log(state.toString());
 
+let TabSet = require('./TabSet'); 
 let intervalTS = new TabSet ('intervalTS_js', state.interval);
 let trafficTS  = new TabSet ('trafficTS_js', state.traffic);
+
+let Table = require('./Table');
+let grid = new Table ('table_js', StateBuilder.ASPECT);
