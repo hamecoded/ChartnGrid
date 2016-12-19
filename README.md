@@ -28,7 +28,10 @@ Browse to [site](https://hamecoded.github.io/ChartnGrid/), and start playing wit
 - Mobile ready
 
 ### Software Architecture
-The following 3 Flow Diagrams demonstrates the initialization flow; the hot syncing flow as data has been modified on the server; and finally the ui interaction flow, where upon interacting with one component another responds to state change.
+The following 3 Flow Diagrams demonstrates:
+- the initialization flow; 
+- the hot syncing flow as data has been modified on the server; 
+- and finally the ui interaction flow, where upon interacting with one component another responds to state change.
 
 
 #### Init Flow Sequence Diagram 
