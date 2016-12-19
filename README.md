@@ -27,6 +27,23 @@ Browse to [site](https://hamecoded.github.io/ChartnGrid/), and start playing wit
 - Structuring mock json data which was planned to be served through a Cachier Object that inturn calls a graphQl endpoint.
 - Mobile ready
 
+### Software Architecture
+The following 3 Flow Diagrams demonstrates the initialization flow; the hot syncing flow as data has been modified on the server; and finally the ui interaction flow, where upon interacting with one component another responds to state change.
+
+
+![Init Flow](https://github.com/hamecoded/ChartnGrid/blob/master/doc/Init%20Flow.jpg)
+#### Init Flow Sequence Diagram
+
+
+
+![HotSync Flow](https://github.com/hamecoded/ChartnGrid/blob/master/doc/HotSync%20Flow.jpg)
+#### HotSync Flow Sequence Diagram
+
+
+
+![UI Flow](https://github.com/hamecoded/ChartnGrid/blob/master/doc/Component%20Interaction%20Flow.jpg)
+#### User Interaction Flow Sequence Diagram
+
 
 ### Dev Run
 - `npm install`
