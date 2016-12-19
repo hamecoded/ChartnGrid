@@ -2,7 +2,7 @@ require('!style-loader!css-loader!sass-loader!../scss/index.scss');
 require('font-awesome-webpack');
 
 let StateBuilder = require('./StateBuilder'); 
-let state = new StateBuilder.State ();
+let state = StateBuilder.State;
 
 let TabSet = require('./TabSet'); 
 let intervalTS = new TabSet ('interval_js', state, 'interval');

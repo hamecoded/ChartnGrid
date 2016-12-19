@@ -87,7 +87,7 @@ class State {
 		this.fetch();
 	}
 }
-module.exports.State = State;
+module.exports.State = new State ();
 // Though const ensure the variable holds the same obj ref, 
 // Object.freeze will prevent changing that Object
 module.exports.TRAFFIC = Object.freeze(TRAFFIC);
